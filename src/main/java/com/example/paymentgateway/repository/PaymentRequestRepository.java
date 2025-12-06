@@ -1,7 +1,7 @@
 package com.example.paymentgateway.repository;
 
 import com.example.paymentgateway.model.PaymentRequest;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface PaymentRequestRepository extends JpaRepository<PaymentRequest, Long> {
+public interface PaymentRequestRepository extends MongoRepository<PaymentRequest, String> {
 }
